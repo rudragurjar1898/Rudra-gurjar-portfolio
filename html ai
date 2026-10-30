@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rudra Gurjar | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(15, 23, 42, .95);
+      border-bottom: 1px solid #334155;
+      padding: 16px 8%;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-size: 1.4rem; font-weight: 700; color: #38bdf8; }
+    nav ul { display: flex; list-style: none; gap: 25px; }
+    nav a { color: #cbd5e1; text-decoration: none; }
+    nav a:hover { color: #38bdf8; }
+    section { padding: 80px 8%; }
+    .hero {
+      min-height: 88vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      background: radial-gradient(circle at top, #1e3a5f 0, #0f172a 50%);
+    }
+    .hero h1 { font-size: clamp(2.5rem, 7vw, 5rem); margin-bottom: 12px; }
+    .hero h1 span { color: #38bdf8; }
+    .hero p { max-width: 650px; margin: 0 auto 28px; color: #94a3b8; font-size: 1.15rem; }
+    .btn {
+      display: inline-block; padding: 12px 22px; margin: 5px;
+      border-radius: 8px; text-decoration: none; font-weight: 700;
+      background: #38bdf8; color: #082f49;
+    }
+    .btn.alt { background: transparent; border: 1px solid #38bdf8; color: #38bdf8; }
+    .section-title { text-align: center; font-size: 2rem; margin-bottom: 35px; color: #f8fafc; }
+    .about, .contact-box { max-width: 850px; margin: auto; text-align: center; }
+    .about p, .contact-box p { color: #94a3b8; }
+    .skills, .projects {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px; max-width: 1000px; margin: auto;
+    }
+    .card {
+      background: #1e293b; padding: 25px; border-radius: 14px;
+      border: 1px solid #334155; transition: transform .2s, border-color .2s;
+    }
+    .card:hover { transform: translateY(-5px); border-color: #38bdf8; }
+    .card h3 { color: #38bdf8; margin-bottom: 8px; }
+    .card p { color: #94a3b8; }
+    footer {
+      text-align: center; padding: 25px; border-top: 1px solid #334155;
+      color: #64748b;
+    }
+    @media (max-width: 650px) {
+      nav { flex-direction: column; gap: 10px; }
+      nav ul { gap: 12px; flex-wrap: wrap; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Rudra Gurjar</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>Hi, I'm <span>Rudra Gurjar</span></h1>
+      <p>
+        Welcome to my personal portfolio. I'm a student and aspiring
+        web developer who enjoys creating modern and useful websites.
+      </p>
+      <a class="btn" href="#projects">View My Work</a>
+      <a class="btn alt" href="#contact">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <p>
+        Hello! I'm Rudra Gurjar. I am learning web development and building
+        my skills in HTML, CSS and JavaScript. This portfolio is a place to
+        showcase my projects, skills and future work.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>HTML</h3><p>Creating clean and well-structured web pages.</p></div>
+      <div class="card"><h3>CSS</h3><p>Designing responsive and attractive interfaces.</p></div>
+      <div class="card"><h3>JavaScript</h3><p>Adding interaction and dynamic features to websites.</p></div>
+      <div class="card"><h3>Problem Solving</h3><p>Learning to turn ideas into practical projects.</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio made using HTML and CSS.</p>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>Add your next website or college project here.</p>
+      </div>
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>Add another project with a short description and link.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-box">
+      <p>Want to work together or know more about me?</p>
+      <br>
+      <a class="btn" href="mailto:your-email@example.com">Email Me</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Rudra Gurjar. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
